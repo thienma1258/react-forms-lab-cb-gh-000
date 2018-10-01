@@ -5,7 +5,7 @@ class TwitterMessage extends React.Component {
     super();
 
     this.state = {
-message:''
+message:'f'
 
     };
   }
@@ -15,6 +15,7 @@ message:''
     this.setState({   message: e.target.value})
   }
   render() {
+  console.log( parseInt(this.state.message.length)-parseInt(this.props.maxChars));
     return (
       <div>
         <strong>Your message:</strong>
