@@ -20,7 +20,7 @@ message:''
         <strong>Your message:</strong>
         <input name="message" type="text" value={this.state.message} onChange={this.handleInputChange}  />
         <p>{this.props.maxChars}</p>
-        <p>{ToNumber(this.state.message.length)-ToNumber(this.props.maxChars)}</p>
+        <p>{parseInt(this.state.message.length)-parseInt(this.props.maxChars)}</p>
 
       </div>
     );
