@@ -10,7 +10,7 @@ message:''
     };
   }
   handleInputChange=(event)=>{
-    console.log(event.target.getAttribute('name');
+    console.log(event.target.getAttribute('name'));
     console.log(event.target.value);
 
     this.setState({   [event.target.getAttribute('name')]: event.target.value})
