@@ -19,7 +19,7 @@ message:''
       <div>
         <strong>Your message:</strong>
         <input name="message" type="text" value={this.state.message} onChange={this.handleInputChange}  />
-        <p>{this.state.message.length}</p>
+        <p>{this.props.maxChars.length}</p>
       </div>
     );
   }
