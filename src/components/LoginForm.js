@@ -14,9 +14,14 @@ class LoginForm extends React.Component {
 
     this.setState({  [e.target.id]: e.target.value})
   }
+  SubmitLoginForm=(e)=>{
+    e.preventDefault();
+    this.props.onSubmit(this.state.username,this.state.password);
+
+  }
   render() {
     return (
-      <form>
+      <form onSubmit=>
         <div>
           <label>
             Username
