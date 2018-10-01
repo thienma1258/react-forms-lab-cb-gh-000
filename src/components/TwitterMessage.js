@@ -21,7 +21,7 @@ message:'f'
         <strong>Your message:</strong>
         <input name="message" type="text" value={this.state.message} onChange={this.handleInputChange}  />
         <p>{this.props.maxChars}</p>
-        <p>{parseInt(this.state.message.length)-parseInt(this.props.maxChars)}</p>
+        <p>{parseInt(this.props.maxChars)-parseInt(this.state.message.length)}</p>
 
       </div>
     );
